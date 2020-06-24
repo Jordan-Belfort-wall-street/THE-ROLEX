@@ -1,0 +1,1547 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menu .toggler {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.menu .hamburger {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .hamburger div {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.menu .hamburger div::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.menu .toggler:hover + .hamburger div,
+.menu .toggler:hover + .hamburger div::before {
+  background-color: #047a4b;
+}
+
+.menu .toggler:checked + .hamburger div {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.menu .toggler:checked + .hamburger div::before {
+  top: 0px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.menu .toggler:checked ~ .menu-bar {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media (max-width: 750px) {
+  .menu .toggler {
+    top: 40px;
+    left: 40px;
+  }
+  .menu .hamburger {
+    top: 40px;
+    left: 40px;
+  }
+}
+
+.inner a, .inner .world-of-rolex, .inner .service, .inner .org {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: cursive;
+}
+
+.inner a:hover, .inner .world-of-rolex:hover, .inner .service:hover, .inner .org:hover {
+  color: #a37e2c;
+}
+
+.menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.menu-bar ::-webkit-scrollbar {
+  height: 5px;
+}
+
+.menu-bar ::-webkit-scrollbar-track {
+  background-color: #333;
+  border-radius: 25px;
+}
+
+.menu-bar ::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.menu-bar :hover::-webkit-scrollbar {
+  height: 7px;
+}
+
+.menu-bar .inner {
+  position: fixed;
+  width: 50%;
+  height: 700px;
+  background-color: #212121;
+  padding: 40px;
+  overflow-y: scroll;
+}
+
+.menu-bar ::-webkit-scrollbar {
+  width: 0px;
+}
+
+.menu-bar .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #212121;
+  width: 100%;
+  height: 300px;
+  overflow-x: auto;
+  position: relative;
+  margin-top: 90px;
+}
+
+.inner .logo {
+  width: 120px;
+  position: absolute;
+  left: 40%;
+  top: 2%;
+}
+
+.inner .fas {
+  color: #fff;
+  position: absolute;
+  left: 60px;
+  top: 50px;
+}
+
+.inner .fas:hover {
+  color: #a37e2c;
+  cursor: pointer;
+}
+
+.inner ul {
+  margin-top: 30px;
+}
+
+.inner li {
+  list-style: none;
+  line-height: 40px;
+}
+
+.inner .world-of-rolex, .inner .service, .inner .org {
+  position: relative;
+  top: 35px;
+}
+
+.flex .img1 {
+  background-image: url("../navigation-collection/1.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img2 {
+  background-image: url("../navigation-collection/2.jpg");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img3 {
+  background-image: url("../navigation-collection/3.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img4 {
+  background-image: url("../navigation-collection/4.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img5 {
+  background-image: url("../navigation-collection/5.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img6 {
+  background-image: url("../navigation-collection/6.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img7 {
+  background-image: url("../navigation-collection/7.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img8 {
+  background-image: url("../navigation-collection/8.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img9 {
+  background-image: url("../navigation-collection/9.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img10 {
+  background-image: url("../navigation-collection/10.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img11 {
+  background-image: url("../navigation-collection/11.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img12 {
+  background-image: url("../navigation-collection/12.jpg");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img13 {
+  background-image: url("../navigation-collection/13.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img14 {
+  background-image: url("../navigation-collection/14.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex .img15 {
+  background-image: url("../navigation-collection/15.webp");
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex > div div {
+  margin-right: 10px;
+}
+
+.flex > div div:hover {
+  background-size: 110%;
+  cursor: pointer;
+}
+
+.flex p {
+  background-color: #212121;
+  position: absolute;
+  bottom: 20px;
+  width: 200px;
+  height: 52px;
+  overflow: hidden;
+  color: #fff;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  padding: 10px;
+}
+
+.flex p span {
+  font-size: 13px;
+}
+
+.flex p:hover {
+  bottom: 10px;
+  height: 87px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .menu-bar .inner {
+    width: 70%;
+  }
+}
+
+@media (max-width: 750px) {
+  .menu-bar .inner {
+    width: 90%;
+  }
+  .inner .logo {
+    width: 100px;
+    top: 1%;
+  }
+  .inner .fas {
+    left: 45px;
+    top: 41px;
+  }
+  .inner a {
+    font-size: 15px;
+  }
+}
+
+.navigation-bar a, .icons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0px 12px;
+  font-size: 17px;
+  font-family: cursive;
+}
+
+.navigation-bar a:hover, .icons a:hover {
+  color: #047a4b;
+}
+
+.navigation-bar {
+  position: absolute;
+  top: 46px;
+  left: 13%;
+}
+
+.navigation-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation-bar li {
+  list-style: none;
+}
+
+.main-logo {
+  width: 100px;
+  position: absolute;
+  top: 7%;
+  left: 48%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.icons {
+  position: absolute;
+  top: 44px;
+  right: 5%;
+  color: #fff;
+}
+
+.icons .search::after {
+  content: "Search";
+  margin-left: 10px;
+}
+
+.icons .favourite::after {
+  content: "Your selection";
+  margin-left: 10px;
+}
+
+@media (max-width: 1300px) {
+  .navigation-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .icons {
+    right: 1%;
+  }
+  .icons a {
+    font-size: 16px;
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .main-logo {
+    width: 80px;
+  }
+  .icons {
+    position: absolute;
+    top: 6%;
+    right: 0%;
+    color: #fff;
+  }
+  .icons a {
+    padding: 6px;
+    font-size: 16px;
+  }
+  .icons .search::after {
+    content: "";
+  }
+  .icons .favourite::after {
+    content: "";
+  }
+}
+
+.rolex-video {
+  width: 100%;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.rolex-video1 {
+  display: none;
+}
+
+.rolex-video2 {
+  display: none;
+}
+
+.model-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.model-name .para1 {
+  font-size: 45px;
+  letter-spacing: 7px;
+}
+
+.model-name .para2 {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.arrow span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation: downArrow 1.4s infinite;
+          animation: downArrow 1.4s infinite;
+}
+
+@-webkit-keyframes downArrow {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(45deg) translate(-40px, -40px);
+            transform: rotate(45deg) translate(-40px, -40px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes downArrow {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(45deg) translate(-40px, -40px);
+            transform: rotate(45deg) translate(-40px, -40px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .rolex-video {
+    display: none;
+  }
+  .rolex-video1 {
+    display: initial;
+    width: 100%;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .rolex-video {
+    display: none;
+  }
+  .rolex-video1 {
+    display: none;
+  }
+  .rolex-video2 {
+    display: initial;
+    width: 100%;
+    pointer-events: none;
+  }
+  .model-name {
+    line-height: 35px;
+  }
+  .model-name .para1 {
+    font-size: 30px;
+    letter-spacing: 7px;
+  }
+  .model-name .para2 {
+    font-size: 19px;
+    letter-spacing: 2px;
+  }
+}
+
+.explore {
+  background-color: whitesmoke;
+  margin-top: -6px;
+  padding: 80px 150px;
+  font-family: Helvetica;
+}
+
+.explore .para1 {
+  font-size: 35px;
+  letter-spacing: 8px;
+  font-weight: 600;
+}
+
+.explore .para2 {
+  margin: 30px 0px;
+  color: #383535;
+  line-height: 30px;
+}
+
+.explore .finder {
+  font-weight: 700;
+  border: 2px solid #047a4b;
+  padding: 10px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #047a4b;
+  margin-right: 30px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.explore .finder:hover {
+  background-color: #047a4b;
+  color: #fff;
+}
+
+.explore .configure {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  font-weight: 700;
+  text-decoration: none;
+  color: #047a4b;
+}
+
+.explore .configure:hover {
+  color: #d8d2d2;
+}
+
+@media (max-width: 1150px) {
+  .explore {
+    padding: 70px 40px;
+  }
+  .explore .para1 {
+    font-size: 32px;
+    letter-spacing: 6px;
+  }
+}
+
+@media (max-width: 750px) {
+  .explore .para1 {
+    font-size: 27px;
+    letter-spacing: 3px;
+  }
+  .explore .para2 {
+    margin: 20px 0px;
+    margin-bottom: 30px;
+    line-height: 24px;
+  }
+  .explore .finder {
+    padding: 8px 27px;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .explore .configure {
+    font-size: 15px;
+  }
+}
+
+.rolex-watches {
+  padding: 40px 80px;
+}
+
+.rolex-watches ::-webkit-scrollbar {
+  height: 5px;
+  margin-top: 20px;
+}
+
+.rolex-watches ::-webkit-scrollbar-track {
+  background-color: #ddd;
+  border-radius: 40px;
+}
+
+.rolex-watches ::-webkit-scrollbar-thumb {
+  background-color: #047a4b;
+  border-radius: 40px;
+}
+
+.rolex-watches :hover::-webkit-scrollbar {
+  height: 8px;
+}
+
+.rolex-watches .view-all {
+  font-family: Helvetica;
+  font-weight: 600;
+  color: #333;
+}
+
+.rolex-watches .view-all a {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  text-decoration: none;
+  color: #047a4b;
+}
+
+.rolex-watches .view-all a:hover {
+  color: #d8d2d2;
+}
+
+.rolex-watches .flex1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+.flex1 .image1 {
+  background-image: url("../Rolex-watches/1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image2 {
+  background-image: url("../Rolex-watches/2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image3 {
+  background-image: url("../Rolex-watches/3.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image4 {
+  background-image: url("../Rolex-watches/4.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image5 {
+  background-image: url("../Rolex-watches/5.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image6 {
+  background-image: url("../Rolex-watches/6.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image7 {
+  background-image: url("../Rolex-watches/7.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image8 {
+  background-image: url("../Rolex-watches/8.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image9 {
+  background-image: url("../Rolex-watches/9.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image10 {
+  background-image: url("../Rolex-watches/10.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image11 {
+  background-image: url("../Rolex-watches/11.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image12 {
+  background-image: url("../Rolex-watches/12.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image13 {
+  background-image: url("../Rolex-watches/13.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image14 {
+  background-image: url("../Rolex-watches/14.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 .image15 {
+  background-image: url("../Rolex-watches/15.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 350px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.flex1 > div {
+  margin-bottom: 100px;
+}
+
+.flex1 div {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.flex1 div:hover {
+  background-size: 110%;
+}
+
+.flex1 p {
+  position: absolute;
+  background-color: #fff;
+  width: 300px;
+  bottom: 70px;
+  height: 48px;
+  overflow: hidden;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.flex1 p span {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+.flex1 p:hover {
+  bottom: 50px;
+  height: 100px;
+}
+
+@media (max-width: 750px) {
+  .rolex-watches {
+    padding: 40px 40px;
+  }
+  .rolex-watches ::-webkit-scrollbar {
+    height: 4px;
+  }
+  .rolex-watches :hover::-webkit-scrollbar {
+    height: 6px;
+  }
+  .rolex-watches .view-all {
+    font-size: 14px;
+  }
+  .rolex-watches .flex1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+  }
+  .flex1 > div {
+    margin-bottom: 80px;
+  }
+  .flex1 div {
+    margin-right: 20px;
+  }
+  .flex1 div:hover {
+    background-size: 100%;
+  }
+  .flex1 p {
+    bottom: 10px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 10px 0px;
+    letter-spacing: 1px;
+  }
+  .flex1 p:hover {
+    bottom: 10px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+
+.rolex-making {
+  background-color: black;
+  position: relative;
+}
+
+.rolex-making .making-video {
+  width: 100%;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.rolex-making .about {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.rolex-making .about .para1 {
+  font-size: 18px;
+}
+
+.rolex-making .about h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin: 20px 0px;
+}
+
+.rolex-making .about .para2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 750px) {
+  .rolex-making .about .para1 {
+    font-size: 16px;
+  }
+  .rolex-making .about h1 {
+    font-size: 30px;
+  }
+  .rolex-making .about .para2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+}
+
+.grid .item-a, .grid .item-b, .grid .item-c, .store-locator .store-img {
+  width: 100%;
+  height: 400px;
+  background-image: url("../grid-images/1.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.grid .item-a:hover, .grid .item-b:hover, .grid .item-c:hover, .store-locator .store-img:hover {
+  cursor: pointer;
+  background-size: 105%;
+}
+
+.grid-container {
+  padding: 50px 120px;
+}
+
+.grid-container .discover {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "item-a item-b" "item-c item-c";
+  grid-gap: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #333;
+}
+
+.grid .item-b {
+  background-image: url("../grid-images/2.jpg");
+}
+
+.grid .item-c {
+  background-image: url("../grid-images/3.webp");
+  margin-top: -30px;
+}
+
+.grid div {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.grid p {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  position: absolute;
+  bottom: -25px;
+  height: 62px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 700;
+  overflow: hidden;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.grid p:hover {
+  height: 80px;
+  cursor: pointer;
+}
+
+.grid p span {
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: initial;
+  font-weight: initial;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    margin-top: -70px;
+  }
+  .grid .item-c {
+    margin-top: -70px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .grid .item-c {
+    margin-top: -100px;
+  }
+  .grid p {
+    bottom: 5px;
+    letter-spacing: 4px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    margin-top: -100px;
+  }
+  .grid .item-c {
+    margin-top: -100px;
+  }
+  .grid p {
+    bottom: 5px;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+  .grid p span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    margin-top: -130px;
+  }
+  .grid .item-c {
+    margin-top: -120px;
+  }
+  .grid p {
+    bottom: 24px;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+  .grid p span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 850px) {
+  .grid {
+    margin-top: -130px;
+  }
+  .grid .item-c {
+    margin-top: -150px;
+  }
+  .grid p {
+    bottom: 40px;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+  .grid p span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid .item-a, .grid .item-b, .grid .item-c, .store-locator .store-img {
+    height: 724px;
+  }
+  .grid .item-a:hover, .grid .item-b:hover, .grid .item-c:hover, .store-locator .store-img:hover {
+    background-size: 100%;
+  }
+  .grid-container {
+    padding: 20px;
+  }
+  .grid {
+    grid-gap: 10px;
+    margin-top: -90px;
+  }
+  .grid .item-a {
+    background-image: url("../grid-images/11.jpg");
+  }
+  .grid .item-b {
+    background-image: url("../grid-images/22.webp");
+  }
+  .grid .item-c {
+    background-image: url("../grid-images/33.webp");
+    margin-top: -150px;
+  }
+  .grid div {
+    position: relative;
+    margin-bottom: -100px;
+  }
+  .grid p {
+    bottom: 16%;
+    height: 100px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 10px 0px;
+  }
+  .grid p:hover {
+    height: 100px;
+  }
+  .grid p span {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: initial;
+    font-weight: initial;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container .discover {
+    margin-bottom: 20px;
+  }
+  .grid {
+    margin-top: -200px;
+  }
+  .grid .item-c {
+    margin-top: -200px;
+  }
+}
+
+.store-locator {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: black;
+  position: relative;
+}
+
+.store-locator .store-img {
+  background-image: url("../grid-images/homepage-store-locator-banner.webp");
+  height: 450px;
+  opacity: 0.5;
+}
+
+.store-locator .store-img:hover {
+  background-size: 104%;
+}
+
+.store-locator .paras {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 19px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.store-locator .paras p span {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.store-locator a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin-left: -20px;
+  padding: 8px 30px;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.store-locator a:hover {
+  background-color: #fff;
+  color: #047a4b;
+}
+
+@media (max-width: 1170px) {
+  .store-locator .store-img {
+    height: 380px;
+  }
+  .store-locator a {
+    top: 68%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .store-locator .store-img {
+    height: 305px;
+  }
+  .store-locator a {
+    top: 73%;
+  }
+}
+
+@media (max-width: 800px) {
+  .store-locator .store-img {
+    background-image: url("../grid-images/store-locator.webp");
+    height: 700px;
+  }
+  .store-locator .paras {
+    font-size: 16px;
+  }
+  .store-locator .paras p span {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+  .store-locator a {
+    top: 61%;
+    left: 53%;
+  }
+  .store-locator a:hover {
+    background-color: initial;
+    color: #fff;
+  }
+}
+
+@media (max-width: 600px) {
+  .store-locator .store-img {
+    height: 580px;
+  }
+}
+
+.social-media {
+  padding: 100px 10px;
+  position: relative;
+  background-color: #f5f1f1;
+}
+
+.social-media div {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.social-media div p {
+  font-size: 17px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.social-media div .fas, .social-media div .fab {
+  color: #047a4b;
+  font-size: 14px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.social-media div .fas:hover, .social-media div .fab:hover {
+  background-color: #047a4b;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .social-media div {
+    left: 50%;
+  }
+}
+
+@media (max-width: 750px) {
+  .social-media div {
+    top: 30%;
+    left: 25%;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  .social-media div p {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+}
+
+.footer a, .footer-flex a {
+  text-decoration: none;
+  color: #ddd;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.footer a:hover, .footer-flex a:hover {
+  color: #a37e2c;
+}
+
+.footer {
+  font-family: helvetica;
+  position: relative;
+  background-color: #212121;
+  padding: 100px;
+  padding-bottom: 120px;
+}
+
+.footer .languages {
+  position: absolute;
+  left: 10%;
+  top: 7%;
+}
+
+.footer .access {
+  position: absolute;
+  right: 10%;
+  top: 7%;
+}
+
+.footer .commitments {
+  position: absolute;
+  left: 14%;
+  bottom: 10%;
+}
+
+.footer .hr1 {
+  position: absolute;
+  left: 0;
+  bottom: 7%;
+  border: 1px solid #333;
+}
+
+.footer .up-arrow {
+  font-size: 30px;
+  color: #ddd;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  bottom: -10px;
+}
+
+.footer-flex {
+  font-family: helvetica;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-flex p {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #ddd;
+  font-size: 13px;
+}
+
+.footer-flex hr {
+  border: 1px solid #333;
+  margin-top: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.footer-flex li {
+  list-style: none;
+}
+
+.footer-flex .fab, .footer-flex .far {
+  margin-right: 10px;
+}
+
+@media (max-width: 750px) {
+  .footer {
+    padding: 100px 30px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .footer .up-arrow {
+    font-size: 20px;
+    bottom: 0px;
+  }
+  .footer .languages {
+    position: absolute;
+    left: 4%;
+    top: 3%;
+  }
+  .footer .access {
+    position: absolute;
+    right: 4%;
+    top: 3%;
+  }
+  .footer .commitments {
+    position: absolute;
+    left: 4%;
+    bottom: 4%;
+  }
+  .footer .hr1 {
+    bottom: 3%;
+  }
+  .footer-flex {
+    display: block;
+  }
+  .footer-flex p {
+    font-size: 13px;
+  }
+  .footer-flex hr {
+    width: 100%;
+  }
+  .footer-flex a:hover {
+    color: #ddd;
+  }
+}
+/*# sourceMappingURL=style.css.map */
